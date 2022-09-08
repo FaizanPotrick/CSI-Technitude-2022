@@ -2,10 +2,13 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Timer from './components/Timer/Timer';
 import Timeline from './components/Timeline/Timeline';
+import MobileNav from './components/MobileNav/MobileNav';
+
 
 function App() {
   return (
     <div className="App">
+      <MobileNav/>
       <Navbar />
       <div className="hero d-flex align-items-center justify-content-center mb-4">
         <div className="hero-text text-center">
