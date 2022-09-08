@@ -3,6 +3,11 @@
     src: url("./assets/BomberEscortSemiItalic-VGzp6.otf") format("opentype");
 }
 
+body {
+    background-color: #000;
+    color: #fff;
+}
+
 .hero {
     background: url(./assets/background.png);
     height: 100vh;
@@ -14,7 +19,7 @@
 .hero-text h1 {
     color: #fff;
     font-size: 8rem;
-    font-family: "BomberEscortSemiItalic";
+    font-family: "BomberEscortSemiItalic", sans-serif;
     font-weight: 500;
     font-style: italic;
     letter-spacing: 3px;
@@ -22,4 +27,10 @@
     background: linear-gradient(150deg, rgb(234, 164, 0) 0%, rgb(255, 179, 0) 29%, rgb(255, 7, 77) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
 }
