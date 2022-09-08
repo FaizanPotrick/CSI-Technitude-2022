@@ -3,7 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import Timer from './components/Timer/Timer';
 import Timeline from './components/Timeline/Timeline';
 import MobileNav from './components/MobileNav/MobileNav';
-
+import Events from './components/Events/Events';
 
 function App() {
   return (
@@ -21,6 +21,9 @@ function App() {
       </div>
       <div className="container-fluid p-3">
         <Timeline />
+      </div>
+      <div className="container-fluid p-3">
+        <Events />
       </div>
     </div >
   );

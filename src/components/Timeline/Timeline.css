@@ -11,6 +11,8 @@
     margin-left: -1rem;
     width: 100%;
     max-width: 600px;
+    user-select: none !important;
+    user-zoom: none !important;
 }
 
 @media screen and (max-width: 480px) {
