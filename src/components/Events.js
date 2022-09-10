@@ -16,7 +16,7 @@ const Events = () => {
       className="relative flex flex-col items-center justify-center mt-20 py-5 px-3"
     >
       <h2 className="title">Events</h2>
-      <div className="relative">
+      <div className="relative mx-3 sm:mx-14">
         <div className="absolute left-0 z-10 flex justify-center items-center h-full">
           <svg
             className="h-10 md:h-16 cursor-pointer hover:scale-125 bg-black/50 rounded-r-lg"
@@ -41,7 +41,7 @@ const Events = () => {
         </div>
         <div
           id="carousel"
-          className="relative flex flex-shrink-0 gap-2 justify-start items-center scroll-smooth overflow-x-scroll no-scrollbar"
+          className="relative flex flex-shrink-0 gap-2 justify-start items-center scroll-smooth overflow-y-hidden overflow-x-scroll no-scrollbar"
         >
           {[
             "escape_out",
@@ -54,22 +54,18 @@ const Events = () => {
             "room2050",
           ].map((event, index) => {
             return (
-              <button
-                className="hover:scale-105"
+              <img
+                className="h-56 sm:h-64 md:h-80 cursor-pointer hover:scale-105"
                 onClick={() => setEvent(true)}
-              >
-                <img
-                  className="h-56 sm:h-64 md:h-80"
-                  src={require(`../assets/events/${event}.png`)}
-                  alt=""
-                  key={index}
-                />
-              </button>
+                key={index}
+                src={require(`../assets/events/${event}.png`)}
+                alt="Event Images"
+              />
             );
           })}
         </div>
       </div>
-      <div className="bomber-escort left-swipe text-[0.75rem] sm:text-lg md:text-xl absolute bottom-0 right-10">
+      <div className="bomber-escort left-swipe text-[0.75rem] sm:text-lg md:text-xl absolute -bottom-5 right-10">
         swipe to view more {">>"}
       </div>
       <div
