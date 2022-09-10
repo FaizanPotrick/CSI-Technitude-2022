@@ -31,24 +31,42 @@ const Navbar = () => {
         } lg:flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-6 xl:gap-8 w-full lg:max-w-xl text-sm`}
         onBlur={() => setHamburger(false)}
       >
-        <a href="#" className="text-white">
+        <button
+          onClick={() => (window.location.href = "#")}
+          className="text-white tracking-widest"
+        >
           Home
-        </a>
-        <a href="#timeline" className="text-white">
+        </button>
+        <button
+          onClick={() => (window.location.href = "#timeline")}
+          className="text-white tracking-widest"
+        >
           Timeline
-        </a>
-        <a href="#events" className="text-white">
+        </button>
+        <button
+          onClick={() => (window.location.href = "#events")}
+          className="text-white tracking-widest"
+        >
           Events
-        </a>
-        <a href="#sponsors" className="text-white">
+        </button>
+        <button
+          onClick={() => (window.location.href = "#sponsors")}
+          className="text-white tracking-widest"
+        >
           Sponsors
-        </a>
-        <a href="#about" className="text-white">
+        </button>
+        <button
+          onClick={() => (window.location.href = "#about")}
+          className="text-white tracking-widest"
+        >
           About
-        </a>
-        <a href="#leads" className="text-white">
+        </button>
+        <button
+          onClick={() => (window.location.href = "#leads")}
+          className="text-white tracking-widest"
+        >
           Leads
-        </a>
+        </button>
       </div>
     </nav>
   );
