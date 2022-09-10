@@ -1,40 +1,72 @@
-import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
-import Timer from "./components/Timer/Timer";
-import Timeline from "./components/Timeline/Timeline";
-import MobileNav from "./components/MobileNav/MobileNav";
-import Events from "./components/Events/Events";
-import About from "./components/About/About";
+import React, { useEffect, useState } from "react";
+import Navbar from "./components/Navbar";
+import Timeline from "./components/Timeline";
+import Events from "./components/Events";
+import Sponsors from "./components/Sponsors";
+import About from "./components/About";
 import Leads from "./components/Leads";
+import "./App.css";
 
 function App() {
+  const [counts, setCounts] = useState({
+    day: 0,
+    hour: 0,
+    minute: 0,
+    second: 0,
+  });
+
+  useEffect(() => {
+    const deadline = new Date("Sep 15, 2022 12:00:00").getTime();
+    const x = setInterval(function () {
+      const now = new Date().getTime();
+      const t = deadline - now;
+      setCounts({
+        day: Math.floor(t / (1000 * 60 * 60 * 24)),
+        hour: Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minute: Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)),
+        second: Math.floor((t % (1000 * 60)) / 1000),
+      });
+      if (t < 0) {
+        clearInterval(x);
+        setCounts({ day: 0, hour: 0, minute: 0, second: 0 });
+      }
+    }, 1000);
+  }, [counts]);
   return (
-    <div className="App">
-      <MobileNav />
+    <div>
       <Navbar />
-      <div className="hero d-flex align-items-center justify-content-center mb-4">
-        <div className="hero-text text-center">
+      <div
+        className="relative flex flex-col items-center justify-center py-5 px-3 h-screen"
+        style={{
+          background: `url(${require("./assets/hero-background.png")})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="text-center bomber-escort text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-glow">
           <h1>TECHNITUDE</h1>
           <h1>2022</h1>
         </div>
+        <div className="absolute text-glow bomber-escort bottom-20 flex justify-center items-center text-lg sm:text-2xl md:text-3xl lg:text-4xl gap-2">
+          <span>{counts.day}D</span>
+          <span>:</span>
+          <span>{counts.hour}H</span>
+          <span>:</span>
+          <span>{counts.minute}M</span>
+          <span>:</span>
+          <span>{counts.second}S</span>
+        </div>
       </div>
-      <div className="container-fluid p-3">
-        <Timer />
-      </div>
-      <div className="container-fluid p-3">
-        <Timeline />
-      </div>
-      <div className="container-fluid p-3">
-        <Events />
-      </div>
-      <div className="container-fluid p-3">
-        <About />
-      </div>
-      <div className="container-fluid p-3">
-        <Leads />
-      </div>
-      <div className="d-flex flex-column align-items-center justify-content-center my-4">
-        <h2 className="mb-3">Stay connected to us</h2>
+      <Timeline />
+      <Events />
+      <Sponsors />
+      <About />
+      <Leads />
+      <div className="flex flex-col items-center justify-center mt-10 py-5 px-3">
+        <div className="mb-10 astro-space text-xl sm:text-3xl md:text-4xl text-glow text-center after:block after:mt-3 after:border-b-2 after:border-slate-700 after:w-[23rem] sm:after:w-[29rem] md:after:w-[35rem]">
+          Stay connected to us
+        </div>
       </div>
     </div>
   );

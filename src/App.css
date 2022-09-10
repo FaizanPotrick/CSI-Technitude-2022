@@ -1,34 +1,35 @@
-@font-face {
-    font-family: BomberEscortSemiItalic;
-    src: url("./assets/BomberEscortSemiItalic-VGzp6.otf") format("opentype");
+.navbar a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  margin: 0 auto;
+  margin-right: 0;
+  transition: 0.5s ease;
+  margin-top: 5px;
+  filter: drop-shadow(0px 0px 10px #af1af1);
+  box-shadow: 0px 0px 10px #af1af1;
 }
 
-body {
-    background-color: #000;
-    color: #fff;
+.navbar a:hover::after {
+  width: 100%;
+  margin: auto;
+  margin-left: 0;
+  margin-top: 5px;
 }
 
-.hero {
-    background: url(./assets/hero-background.png);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: none;
+.timeline img {
+  margin-left: -1rem;
+  width: 100%;
+  margin-top: -10rem;
 }
 
-.hero-text h1 {
-    color: #fff;
-    font-size: 8rem;
-    font-family: "BomberEscortSemiItalic", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-    letter-spacing: 3px;
-    text-shadow: 0px 0px 40px #AF1AF1;
-
-}
-
-@media screen and (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 2.5rem;
-    }
+@media screen and (max-width: 750px) {
+  .timeline img {
+    margin-top: -4rem;
+    width: 140%;
+    margin-left: 0;
+    margin-right: -2rem;
+  }
 }
