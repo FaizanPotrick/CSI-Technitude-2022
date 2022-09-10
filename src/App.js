@@ -67,6 +67,43 @@ function App() {
         <div className="mb-10 astro-space text-xl sm:text-3xl md:text-4xl text-glow text-center after:block after:mt-3 after:border-b-2 after:border-slate-700 after:w-[23rem] sm:after:w-[29rem] md:after:w-[35rem]">
           Stay connected to us
         </div>
+        <div className="flex gap-12 md:gap-14 justify-center items-center my-10">
+          <a href="">
+            <img
+              className="h-10 sm:h-12 hover:scale-110"
+              src={require("./assets/twitter.png")}
+              alt="Twitter"
+            />
+          </a>
+          <a href="">
+            <img
+              className="h-10 sm:h-12 hover:scale-110"
+              src={require("./assets/facebook.png")}
+              alt="Facebook"
+            />
+          </a>
+          <a href="">
+            <img
+              className="h-10 sm:h-12 hover:scale-110"
+              src={require("./assets/linkedin.png")}
+              alt="LinkedIn"
+            />
+          </a>
+          <a href="">
+            <img
+              className="h-10 sm:h-12 hover:scale-110"
+              src={require("./assets/youtube.png")}
+              alt="YouTube"
+            />
+          </a>
+          <a href="">
+            <img
+              className="h-10 sm:h-12 hover:scale-110"
+              src={require("./assets/discord.png")}
+              alt="Discord"
+            />
+          </a>
+        </div>
       </div>
     </div>
   );
