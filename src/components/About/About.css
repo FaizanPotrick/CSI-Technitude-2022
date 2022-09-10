@@ -1,0 +1,26 @@
+.about h2 {
+  font-size: 3rem;
+  font-family: "BomberEscortSemiItalic", sans-serif;
+}
+
+
+
+.about p {
+  font-size: 1.5rem;
+  max-width: 1200px;
+}
+
+.about img {
+  margin-left: -1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 480px) {
+  .about h2 {
+    font-size: 1.5rem;
+  }
+  .about p {
+    font-size: 1rem;
+  }
+}
