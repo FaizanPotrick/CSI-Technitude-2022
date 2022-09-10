@@ -59,6 +59,7 @@ const Events = () => {
                     )
                 })}
             </div>
+            <p id='swipe-text'>swipe to view more <span>{">>"}</span></p>
         </div>
     )
 }
