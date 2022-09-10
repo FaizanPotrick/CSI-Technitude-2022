@@ -68,35 +68,35 @@ function App() {
           Stay connected to us
         </div>
         <div className="flex gap-12 md:gap-14 justify-center items-center my-10">
-          <a href="">
+          <a href="https://dmcecsi.tech/" target="_blank" rel="noreferrer">
             <img
               className="h-10 sm:h-12 hover:scale-110"
               src={require("./assets/twitter.png")}
               alt="Twitter"
             />
           </a>
-          <a href="">
+          <a href="https://dmcecsi.tech/" target="_blank" rel="noreferrer">
             <img
               className="h-10 sm:h-12 hover:scale-110"
               src={require("./assets/facebook.png")}
               alt="Facebook"
             />
           </a>
-          <a href="">
+          <a href="https://dmcecsi.tech/" target="_blank" rel="noreferrer">
             <img
               className="h-10 sm:h-12 hover:scale-110"
               src={require("./assets/linkedin.png")}
               alt="LinkedIn"
             />
           </a>
-          <a href="">
+          <a href="https://dmcecsi.tech/" target="_blank" rel="noreferrer">
             <img
               className="h-10 sm:h-12 hover:scale-110"
               src={require("./assets/youtube.png")}
               alt="YouTube"
             />
           </a>
-          <a href="">
+          <a href="https://dmcecsi.tech/" target="_blank" rel="noreferrer">
             <img
               className="h-10 sm:h-12 hover:scale-110"
               src={require("./assets/discord.png")}
