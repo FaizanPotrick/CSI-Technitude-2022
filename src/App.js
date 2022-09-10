@@ -5,6 +5,7 @@ import Timeline from "./components/Timeline/Timeline";
 import MobileNav from "./components/MobileNav/MobileNav";
 import Events from "./components/Events/Events";
 import About from "./components/About/About";
+import Leads from "./components/Leads";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
       </div>
       <div className="container-fluid p-3">
         <About />
+      </div>
+      <div className="container-fluid p-3">
+        <Leads />
       </div>
       <div className="d-flex flex-column align-items-center justify-content-center my-4">
         <h2 className="mb-3">Stay connected to us</h2>
