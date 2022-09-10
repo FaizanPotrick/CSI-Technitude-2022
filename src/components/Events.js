@@ -44,14 +44,14 @@ const Events = () => {
           className="relative flex flex-shrink-0 gap-2 justify-start items-center scroll-smooth overflow-x-scroll no-scrollbar"
         >
           {[
-            "Escape Out",
-            "Buy Beg",
-            "Upside Down",
-            "Word Faceoff",
-            "Ideobition",
-            "Light Out Code",
-            "Lock N Key",
-            "Room 2050",
+            "escape_out",
+            "buy_beg",
+            "upside_down",
+            "word_face_off",
+            "ideobition",
+            "light_out_code",
+            "lock_n_key",
+            "room2050",
           ].map((event, index) => {
             return (
               <button
