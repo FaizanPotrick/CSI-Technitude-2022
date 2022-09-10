@@ -8,7 +8,7 @@ import Events from './components/Events/Events';
 function App() {
   return (
     <div className="App">
-      <MobileNav/>
+      <MobileNav />
       <Navbar />
       <div className="hero d-flex align-items-center justify-content-center mb-4">
         <div className="hero-text text-center">

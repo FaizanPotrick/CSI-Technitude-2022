@@ -1,11 +1,13 @@
 import React from 'react'
 import './Events.css'
-import event1 from '.././../assets/Upside.png'
-import event2 from '.././../assets/Escape.png'
-import event3 from '.././../assets/monopoly.png'
-import event4 from '.././../assets/ideathon.png'
-import event5 from '.././../assets/sherlock.png'
-import event6 from '.././../assets/off.png'
+import event1 from '.././../assets/events/ESCAPE OUT.png'
+import event2 from '.././../assets/events/BUY BEG.png'
+import event3 from '.././../assets/events/UPSIDE DOWN.png'
+import event4 from '.././../assets/events/WORD FACEOFF.png'
+import event5 from '.././../assets/events/ideobition.png'
+import event6 from '.././../assets/events/lightoutcode.png'
+import event7 from '.././../assets/events/locknkey.png'
+import event8 from '.././../assets/events/room2050.png'
 
 
 const Events = () => {
@@ -35,16 +37,23 @@ const Events = () => {
             event: 6,
             image: event6,
         },
-
+        {
+            event: 7,
+            image: event7,
+        },
+        {
+            event: 8,
+            image: event8,
+        },
     ]
 
     return (
         <div className='events  my-4'>
             <h2 className='text-center'>Events</h2>
             <div className="container-fluid carousel d-flex align-items-center mt-3">
-                {events.map((event) => {
+                {events.map((event, index) => {
                     return (
-                        <div className="event-card me-2">
+                        <div className="event-card me-2" key={index}>
                             <img src={event.image} alt="" />
                         </div>
                     )
