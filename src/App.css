@@ -64,3 +64,10 @@
     margin-right: -2rem;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .navbar .nav-div {
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+  }
+}

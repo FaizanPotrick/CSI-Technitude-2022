@@ -7,7 +7,7 @@ const Navbar = () => {
       className={`navbar absolute w-full z-50 flex flex-col lg:flex-row justify-around items-center astro-space ${hamburger ? "bg-black/90" : "bg-transparent"
         } lg:bg-transparent`}
     >
-      <div className="flex justify-around items-center w-full lg:w-fit py-3">
+      <div className="nav-div flex justify-around items-center w-full lg:w-fit py-3">
         <div className="flex items-center justify-center">
           <img
             src={require("../assets/logo.png")}
