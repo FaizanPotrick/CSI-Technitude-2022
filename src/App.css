@@ -19,11 +19,42 @@
   margin-top: 5px;
 }
 
+.navbar #ham-btn::after {
+  display: none;
+}
+
 .timeline img {
   margin-left: -1rem;
   width: 100%;
   margin-top: -10rem;
 }
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #af1af1;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 50;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+
+#scroll-to-top.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
 
 @media screen and (max-width: 750px) {
   .timeline img {

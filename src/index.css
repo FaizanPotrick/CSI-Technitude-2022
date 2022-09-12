@@ -8,6 +8,10 @@
   src: url("./assets/AstroSpace-0Wl3o.otf") format("opentype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -40,6 +44,11 @@ body {
   text-shadow: 0 0 25px #af1af1;
 }
 
+.hero-title h1 {
+  font-size: 10vw;
+  animation: flicker 1.5s infinite alternate;
+}
+
 .title {
   @apply mb-10 astro-space text-xl sm:text-3xl md:text-4xl text-glow text-center after:block after:mt-3 after:border-b-2 after:border-slate-700 after:w-[18rem] sm:after:w-[24rem] md:after:w-[30rem];
 }
@@ -55,5 +64,26 @@ body {
 
   100% {
     transform: translateX(10px);
+  }
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 0px rgba(255, 255, 255, 0.608),
+      0 0 3px rgba(255, 255, 255, 0.647), 0 0 4px rgba(255, 255, 255, 0.513),
+      0 0 5px #b01af1b0, 0 0 20px #b01af1b0, 0 0 30px #b01af1b0,
+      0 0 40px #b01af1b0, 0 0 50px #b01af1b0;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
   }
 }

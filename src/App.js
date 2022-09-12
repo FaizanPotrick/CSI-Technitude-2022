@@ -5,6 +5,7 @@ import Events from "./components/Events";
 import Sponsors from "./components/Sponsors";
 import About from "./components/About";
 import Leads from "./components/Leads";
+import ScrollToTop from "./components/SrollToTop";
 import "./App.css";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
   }, [counts]);
   return (
     <div>
+      <ScrollToTop />
       <Navbar />
       <div
         className="relative flex flex-col items-center justify-center py-5 px-3 h-screen"
@@ -44,7 +46,7 @@ function App() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="text-center bomber-escort text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-glow">
+        <div className="text-center bomber-escort text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-glow hero-title">
           <h1>TECHNITUDE</h1>
           <h1>2022</h1>
         </div>
