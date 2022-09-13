@@ -4,10 +4,11 @@ const Navbar = () => {
   const [hamburger, setHamburger] = useState(false);
   return (
     <nav
-      className={`navbar absolute w-full z-50 flex flex-col lg:flex-row justify-around items-center astro-space ${hamburger ? "bg-black/90" : "bg-transparent"
-        } lg:bg-transparent`}
+      className={`absolute w-full z-50 flex flex-col lg:flex-row justify-around items-center astro-space ${
+        hamburger ? "bg-black/90" : "bg-transparent"
+      } lg:bg-transparent`}
     >
-      <div className="nav-div flex justify-around items-center w-full lg:w-fit py-3">
+      <div className="flex justify-between lg:justify-around items-center w-full lg:w-fit py-6 px-5 lg:py-2">
         <div className="flex items-center justify-center">
           <img
             src={require("../assets/logo.png")}
@@ -18,15 +19,16 @@ const Navbar = () => {
             CSI-DMCE
           </div>
         </div>
-        <button className="lg:hidden" id="ham-btn" onClick={() => setHamburger(!hamburger)}>
+        <button className="lg:hidden" onClick={() => setHamburger(!hamburger)}>
           <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
             <path d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"></path>
           </svg>
         </button>
       </div>
       <div
-        className={`${hamburger ? "flex p-5" : "hidden"
-          } lg:flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-6 xl:gap-8 w-full lg:max-w-xl text-sm`}
+        className={`menu ${
+          hamburger ? "flex p-5" : "hidden"
+        } lg:flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-6 xl:gap-8 w-full lg:max-w-xl text-sm`}
         onBlur={() => setHamburger(false)}
       >
         <button
