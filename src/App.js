@@ -69,7 +69,7 @@ function App() {
         <div className="mb-10 astro-space text-xl sm:text-3xl md:text-4xl text-glow text-center after:block after:mt-3 after:border-b-2 after:border-slate-700 after:w-[23rem] sm:after:w-[29rem] md:after:w-[35rem]">
           Stay connected to us
         </div>
-        <div className="flex gap-12 md:gap-14 justify-center items-center my-10 flex-wrap">
+        <div className="social flex gap-12 md:gap-14 justify-center items-center my-10 flex-wrap">
           <a href="https://twitter.com/dmce_csi_?t=dMktJKdkhiSltrcf11sYaA&s=08" target="_blank" rel="noreferrer">
             <img
               className="h-10 sm:h-12 hover:scale-110"

@@ -142,9 +142,9 @@ const Events = () => {
             return (
               <img
                 className="h-56 sm:h-64 md:h-80 cursor-pointer hover:scale-105"
+                style={{ transition: "0.3s ease" }}
                 onClick={() => OpenModal(index)}
                 key={index}
-                id={index + 1}
                 src={event.image}
                 alt="Event Images"
               />
