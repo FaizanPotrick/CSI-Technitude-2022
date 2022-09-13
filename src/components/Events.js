@@ -76,7 +76,13 @@ const Events = () => {
       title: "Lights Out Code In",
       image: Lights,
       description: `Codes are like stained-glass windows.
-      Sparkle and Shine with lights out, when the darkness errors in, reveal yourself free with the coding lights💡`,
+      Sparkle and Shine with lights out, when the darkness errors in, reveal yourself free with the coding lights💡
+      
+      ⚫ ROUND 01:  In this task, 
+       there will be a maze game(on desktop)
+      ⚫ ROUND 02 : The player has to solve 4 questions which will be technical based
+       
+      ᴀ ʙʟᴀᴄᴋᴏᴜᴛ ꜱᴛᴀʀᴛꜱ ɪɴ ᴀ ꜱᴇᴄᴏɴᴅ ᴀɴᴅ ᴄᴀɴ ʟᴀꜱᴛ ꜰᴏʀ ʜᴏᴜʀꜱ, ɢɪᴠᴇ ᴛʜᴇ ᴇʟᴇᴄᴛʀɪᴄ ɢʀɪᴅ ʙᴀᴄᴋ ɪᴛ’ꜱ ᴘᴏᴡᴇʀꜱ!⚡`,
       link: "https://forms.gle/uwNudNVaYanBqZAo7"
     },
     {
