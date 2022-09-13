@@ -5,7 +5,6 @@ import Events from "./components/Events";
 import Sponsors from "./components/Sponsors";
 import About from "./components/About";
 import Leads from "./components/Leads";
-import ScrollToTop from "./components/SrollToTop";
 import "./App.css";
 
 function App() {
@@ -15,6 +14,7 @@ function App() {
     minute: 0,
     second: 0,
   });
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const deadline = new Date("Sep 15, 2022 12:00:00").getTime();
@@ -33,9 +33,35 @@ function App() {
       }
     }, 1000);
   }, [counts]);
+
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 200) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  onscroll = () => {
+    toggleVisibility();
+  };
   return (
     <div>
-      <ScrollToTop />
+      <button
+        className={`${
+          isVisible ? "flex" : "hidden"
+        } w-14 h-14 flex justify-center items-center bg-[#af1af1] fixed bottom-10 right-10 text-white z-50 rounded-full cursor-pointer hover:scale-105`}
+        onClick={() => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }}
+      >
+        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"></path>
+        </svg>
+      </button>
       <Navbar />
       <div
         className="relative flex flex-col items-center justify-center py-5 px-3 h-screen"
@@ -46,7 +72,7 @@ function App() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="text-center bomber-escort text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-glow hero-title">
+        <div className="text-center bomber-escort  text-glow text-[10vw] flicker">
           <h1>TECHNITUDE</h1>
           <h1>2022</h1>
         </div>
@@ -66,39 +92,59 @@ function App() {
       <About />
       <Leads />
       <div className="flex flex-col items-center justify-center mt-10 py-5 px-3">
-        <div className="mb-10 astro-space text-xl sm:text-3xl md:text-4xl text-glow text-center after:block after:mt-3 after:border-b-2 after:border-slate-700 after:w-[23rem] sm:after:w-[29rem] md:after:w-[35rem]">
+        <div className="mb-10 astro-space text-lg sm:text-3xl md:text-4xl text-glow text-center after:block after:mt-3 after:border-b-2 after:border-slate-700 after:w-full sm:after:w-[29rem] md:after:w-[35rem]">
           Stay connected to us
         </div>
-        <div className="social flex gap-12 md:gap-14 justify-center items-center my-10 flex-wrap">
-          <a href="https://twitter.com/dmce_csi_?t=dMktJKdkhiSltrcf11sYaA&s=08" target="_blank" rel="noreferrer">
+        <div className="flex gap-12 md:gap-14 justify-center items-center my-10 flex-wrap">
+          <a
+            href="https://twitter.com/dmce_csi_?t=dMktJKdkhiSltrcf11sYaA&s=08"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className="h-10 sm:h-12 hover:scale-110"
               src={require("./assets/twitter.png")}
               alt="Twitter"
             />
           </a>
-          <a href="https://instagram.com/dmce_csi_?igshid=YmMyMTA2M2Y=" target="_blank" rel="noreferrer">
+          <a
+            href="https://instagram.com/dmce_csi_?igshid=YmMyMTA2M2Y="
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className="h-10 sm:h-12 hover:scale-110"
               src={require("./assets/instagram.png")}
               alt="Instagram"
             />
           </a>
-          <a href="https://www.linkedin.com/in/csicattdmce" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/csicattdmce"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className="h-10 sm:h-12 hover:scale-110"
               src={require("./assets/linkedin.png")}
               alt="LinkedIn"
             />
           </a>
-          <a href="https://youtube.com/channel/UCGF7OHVqV0jn6e9e6FHPuAg" target="_blank" rel="noreferrer">
+          <a
+            href="https://youtube.com/channel/UCGF7OHVqV0jn6e9e6FHPuAg"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className="h-10 sm:h-12 hover:scale-110"
               src={require("./assets/youtube.png")}
               alt="YouTube"
             />
           </a>
-          <a href="https://discord.gg/UMCTvwf7" target="_blank" rel="noreferrer">
+          <a
+            href="https://discord.gg/UMCTvwf7"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className="h-10 sm:h-12 hover:scale-110"
               src={require("./assets/discord.png")}
