@@ -54,7 +54,26 @@
   visibility: hidden;
 }
 
+.register-link {
+  color: #af1af1;
+  font-weight: 500;
+  font-size: 1rem;
+}
 
+.register-link:hover {
+  text-decoration: underline;
+}
+
+.sponsor-images {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sponsor-images img {
+  width: 20%;
+  height: auto;
+}
 
 @media screen and (max-width: 750px) {
   .timeline img {

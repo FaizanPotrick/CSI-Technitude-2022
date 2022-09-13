@@ -69,36 +69,36 @@ function App() {
         <div className="mb-10 astro-space text-xl sm:text-3xl md:text-4xl text-glow text-center after:block after:mt-3 after:border-b-2 after:border-slate-700 after:w-[23rem] sm:after:w-[29rem] md:after:w-[35rem]">
           Stay connected to us
         </div>
-        <div className="flex gap-12 md:gap-14 justify-center items-center my-10">
-          <a href="https://dmcecsi.tech/" target="_blank" rel="noreferrer">
+        <div className="flex gap-12 md:gap-14 justify-center items-center my-10 flex-wrap">
+          <a href="https://twitter.com/dmce_csi_?t=dMktJKdkhiSltrcf11sYaA&s=08" target="_blank" rel="noreferrer">
             <img
               className="h-10 sm:h-12 hover:scale-110"
               src={require("./assets/twitter.png")}
               alt="Twitter"
             />
           </a>
-          <a href="https://dmcecsi.tech/" target="_blank" rel="noreferrer">
+          <a href="https://instagram.com/dmce_csi_?igshid=YmMyMTA2M2Y=" target="_blank" rel="noreferrer">
             <img
               className="h-10 sm:h-12 hover:scale-110"
-              src={require("./assets/facebook.png")}
-              alt="Facebook"
+              src={require("./assets/instagram.png")}
+              alt="Instagram"
             />
           </a>
-          <a href="https://dmcecsi.tech/" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/csicattdmce" target="_blank" rel="noreferrer">
             <img
               className="h-10 sm:h-12 hover:scale-110"
               src={require("./assets/linkedin.png")}
               alt="LinkedIn"
             />
           </a>
-          <a href="https://dmcecsi.tech/" target="_blank" rel="noreferrer">
+          <a href="https://youtube.com/channel/UCGF7OHVqV0jn6e9e6FHPuAg" target="_blank" rel="noreferrer">
             <img
               className="h-10 sm:h-12 hover:scale-110"
               src={require("./assets/youtube.png")}
               alt="YouTube"
             />
           </a>
-          <a href="https://dmcecsi.tech/" target="_blank" rel="noreferrer">
+          <a href="https://discord.gg/UMCTvwf7" target="_blank" rel="noreferrer">
             <img
               className="h-10 sm:h-12 hover:scale-110"
               src={require("./assets/discord.png")}
