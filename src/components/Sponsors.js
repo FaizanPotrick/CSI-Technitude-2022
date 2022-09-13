@@ -11,8 +11,8 @@ const Sponsors = () => {
     >
       <h2 className="title">Sponsors</h2>
       <div className="flex sponsor-images">
-        <img src={Spons1} alt="" />
         <img src={Spons2} alt="" />
+        <img src={Spons1} alt="" />
         <img src={Spons3} alt="" />
       </div>
     </div>
