@@ -20,6 +20,11 @@ const Sponsors = () => {
           alt=""
           className="h-16 sm:h-20 md:h-32 rounded-lg"
         />
+        <img
+          src={require("../assets/sponsors/Subject.png")}
+          alt=""
+          className="h-24 sm:h-32 md:h-40"
+        />
       </div>
     </div>
   );

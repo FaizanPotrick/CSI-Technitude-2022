@@ -48,9 +48,8 @@ function App() {
   return (
     <div>
       <button
-        className={`${
-          isVisible ? "flex" : "hidden"
-        } w-14 h-14 flex justify-center items-center bg-[#af1af1] fixed bottom-10 right-10 text-white z-50 rounded-full cursor-pointer hover:scale-105`}
+        className={`${isVisible ? "flex" : "hidden"
+          } w-14 h-14 flex justify-center items-center bg-[#af1af1] fixed bottom-10 right-10 text-white z-50 rounded-full cursor-pointer hover:scale-105`}
         onClick={() => {
           window.scrollTo({
             top: 0,
@@ -77,13 +76,14 @@ function App() {
           <h1>2022</h1>
         </div>
         <div className="absolute text-glow bomber-escort bottom-20 flex justify-center items-center text-lg sm:text-2xl md:text-3xl lg:text-4xl gap-2">
-          <span>{counts.day}D</span>
+          {/* <span>{counts.day}D</span>
           <span>:</span>
           <span>{counts.hour}H</span>
           <span>:</span>
           <span>{counts.minute}M</span>
           <span>:</span>
-          <span>{counts.second}S</span>
+          <span>{counts.second}S</span> */}
+          <span>Welcome To Time Traveler</span>
         </div>
       </div>
       <Timeline />
