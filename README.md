@@ -1,7 +1,7 @@
 
 # CSI TECHNITUDE 2022
 
-DMCE Committee Portal is a platform that helps to bring the various committees present in college together, so that students can check out different ongoing events organized by the committees.
+CSI Technitude is an annual technical festival organised by CSI DMCE. This is a platform to showcase your inner and hidden talents through many knowledgeable yet fun activities.
 
 
 ## Built With
